@@ -1,0 +1,13 @@
+[package]
+name = "mcp-prac"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+actix-web = "4.11.0"
+anyhow = "1.0.100"
+rmcp = { version = "0.8.5", features = ["server", "transport-io"] }
+rmcp-actix-web = "0.8.12"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.145"
+tokio = { version = "1.48.0", features = ["full"] }
